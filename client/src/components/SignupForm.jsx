@@ -10,7 +10,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 
-export function LoginForm({ className, ...props }) {
+export function SignupForm({ className, ...props }) {
   return (
     <form className={cn("flex flex-col gap-6 ", className)} {...props}>
       <FieldGroup>
@@ -21,8 +21,13 @@ export function LoginForm({ className, ...props }) {
           </p>
         </div>
         <Field>
+          <FieldLabel htmlFor="password">Name</FieldLabel>
+
+          <Input id="name" type="text" required placeholder="Jhone doe" />
+        </Field>
+        <Field>
           <FieldLabel htmlFor="email">Email</FieldLabel>
-          <Input id="email" type="email" placeholder="m@example.com" required />
+          <Input id="email" type="email" placeholder="freshbite@gmail.com" required />
         </Field>
         <Field>
           <FieldLabel htmlFor="password">Password</FieldLabel>
@@ -31,7 +36,7 @@ export function LoginForm({ className, ...props }) {
             id="password"
             type="password"
             required
-            placeholder="********"
+            placeholder="password"
           />
         </Field>
         <Field>
@@ -40,9 +45,9 @@ export function LoginForm({ className, ...props }) {
         <FieldSeparator>Or continue with</FieldSeparator>
         <Field>
           <FieldDescription className="text-center">
-            Don&apos;t have an account?{" "}
-            <Link to="/signup" className="underline underline-offset-4">
-              Sign up
+            Already have an account?{" "}
+            <Link to="/login" className="underline underline-offset-4">
+              Login
             </Link>
           </FieldDescription>
         </Field>

@@ -11,7 +11,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-import {Input} from "@/components/ui/input";
+import { Input } from "@/components/ui/input";
 
 const Shop = () => {
   const categories = [
@@ -46,11 +46,12 @@ const Shop = () => {
                 {category}
               </Button>
             ))}
-            <Input placeholder="Search here..." className="max-w-xl border-green-300"  />
+            <Input
+              placeholder="Type here to search..."
+              className="max-w-xl border-green-300"
+            />
           </div>
-          <div className="mt-5 max-w-xl mx-auto">
-
-          </div>
+          <div className="mt-5 max-w-xl mx-auto"></div>
         </div>
 
         {/* Food Grid */}
@@ -61,30 +62,30 @@ const Shop = () => {
             ))}
           </div>
           <div className="mt-10">
-          <Pagination>
-            <PaginationContent>
-              <PaginationItem>
-                <PaginationPrevious href="#" />
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationLink href="#">1</PaginationLink>
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationLink href="#" isActive>
-                  2
-                </PaginationLink>
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationLink href="#">3</PaginationLink>
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationEllipsis />
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationNext href="#" />
-              </PaginationItem>
-            </PaginationContent>
-          </Pagination>
+            <Pagination>
+              <PaginationContent>
+                <PaginationItem>
+                  <PaginationPrevious href="#" />
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink href="#">1</PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink href="#" isActive>
+                    2
+                  </PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink href="#">3</PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationEllipsis />
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationNext href="#" />
+                </PaginationItem>
+              </PaginationContent>
+            </Pagination>
           </div>
         </div>
 

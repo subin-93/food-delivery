@@ -8,7 +8,7 @@ const FoodCard = ({ item }) => {
   const { addToCart } = useCart();
 
   return (
-    <Card className="group overflow-hidden transition-all duration-300 hover:shadow-lg border-border pt-0">
+    <Card className="group overflow-hidden transition-all duration-300 hover:shadow-lg border-border py-0">
       <div className="aspect-square overflow-hidden bg-muted">
         <img
           src={item.image}

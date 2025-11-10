@@ -1,9 +1,9 @@
-package com.college.fooddelivery.entity;
+package com.college.fooddelivery.model;
 
 import jakarta.persistence.Entity;
 
 @Entity
-public class productEntity {
+public class ProductModel {
     private Long productId;
     private String name;
     private String description;
